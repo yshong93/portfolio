@@ -26,6 +26,7 @@
 
     <!--JQuery-->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -139,6 +140,13 @@
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
               
               </script>
+              
+              <script type="text/javascript" src="portfolioItem.js"></script>
+              <div id="portfoilo_cells"></div>
+
+
+
+
               <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#testportfoliomodal" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -246,8 +254,6 @@
         </div>
     </section>
 
-
-
         <!-- About Section -->
     <section id="about">
         <div class="container">
@@ -342,6 +348,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
+
                     <div class="team-member">
                         <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
                         <h4>Kay Garland</h4>
@@ -395,7 +402,6 @@
         </div>
     </section>
 
-   
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -439,7 +445,6 @@
                 </div>
             </div>
         </div>
-
 
     </section>
 
@@ -652,6 +657,54 @@
             </div>
         </div>
     </div>
+
+     <!-- Portfolio Modal template -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Cell Template -->
+    <div class="template_cell" style="display:none">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img class="img-responsive" alt="">
+            </a>
+            <div class="portfolio-caption">
+                <h4 class="text-title"></h4>
+                <p class="text-muted">Open Source Game Server Engine</p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
