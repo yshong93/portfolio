@@ -1,5 +1,5 @@
 [{
-    
+
     "title" : "CloudBread Project devleop",
     "subTitle" : "Open Source Game Server Engine",
     "categories" : "Game Server Engine",
@@ -50,7 +50,7 @@
 {
     "title" : "감시소",
     "subTitle" : "Surveillance services to protect from robber's threat",
-    "categories" : "Computer Vision"
+    "categories" : "Computer Vision",
     "img_src" : "img/portfolio/startup-framework.png"
 }
 ]
