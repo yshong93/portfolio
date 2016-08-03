@@ -1,36 +1,12 @@
-var portfolio_item = [{
-    title : "CloudBread Project devleop",
-    subTitle : "Open Source Game Server Engine",
-    img_src : "img/portfolio/treehouse.png"
-},
-{
-    title : "CloudBread Camp",
-    subTitle : "Open Source Game Server Engine",
-    img_src : "img/portfolio/startup-framework.png"
-},
-{
-    title : "I am as I am",
-    subTitle : "Interactive Media Art",
-    img_src : "img/portfolio/I am as I am.png"
-},
-{
-    title : "Malil - Pop up Restautant",
-    subTitle : "UX design",
-    img_src : "img/portfolio/startup-framework.png"
-},
-{
-    title :"Around the Truck",
-    subTitle : "Android Mobile App",
-    img_src : "img/portfolio/Shall We Mate.png"
-},
-{
-    title : "Shall We Mate?",
-    subTitle : "Mobile App",
-    img_src : "img/portfolio/Shall We Mate.png"
-}
-];
+var url = 'https://raw.githubusercontent.com/yshong93/portfolio/gh-pages/';
+
+var portfolio_item;
 
 $(document).ready(function() {
+
+  $.getJSON(url + 'data/portfolio_item.json', function(data){
+    portfolio_item = data;
+    // console.log(data);
 
     for(var  i = 0 ; i < portfolio_item.length; i ++){
 
@@ -60,4 +36,8 @@ $(document).ready(function() {
         });
 
     }
+
+  });
+
+
 });
