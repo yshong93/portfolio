@@ -1,31 +1,56 @@
 [{
+    /*"id" : "portfolio01",*/
     "title" : "CloudBread Project devleop",
     "subTitle" : "Open Source Game Server Engine",
+    "categories" : "Game Server Engine",
     "img_src" : "img/portfolio/treehouse.png"
 },
 {
     "title" : "CloudBread Camp",
     "subTitle" : "Open Source Game Server Engine",
+    "categories" : "Open Source Community Activities",
     "img_src" : "img/portfolio/startup-framework.png"
 },
 {
-    "title" : "I am as I am",
-    "subTitle" : "Interactive Media Art",
+    "title" : "I am as I am (모든 것은 나다.)",
+    "subTitle" : "Drone & HMD Collaboration Art",
+    "categories" : "Interactive Meida Art",
     "img_src" : "img/portfolio/I am as I am.png"
 },
 {
     "title" : "Malil - Pop up Restautant",
-    "subTitle" : "UX design",
+    "subTitle" : "Space Share Platform for prep chiefs",
+    "categories" : "UX design",
+    "img_src" : "img/portfolio/startup-framework.png"
+},
+{
+    "title" : "Light of Sea",
+    "subTitle" : "Interactive Metarials to teach Light's properties",
+    "categories" : "Interactive Media Arts",
+    "img_src" : "img/portfolio/startup-framework.png"
+},
+{
+    "title" : "Waterful",
+    "subTitle" : "Smart Water Reminder App",
+    "categories" : "Apple Watch App",
     "img_src" : "img/portfolio/startup-framework.png"
 },
 {
     "title" :"Around the Truck",
     "subTitle" : "Android Mobile App",
+    "categories" : "Android Mobile App",
     "img_src" : "img/portfolio/Shall We Mate.png"
 },
 {
     "title" : "Shall We Mate?",
-    "subTitle" : "Mobile App",
+    "subTitle" : "Platform to macth Roommates in Share House",
+    "categories" : "iOS Mobile App",
     "img_src" : "img/portfolio/Shall We Mate.png"
+},
+{
+    "title" : "감시소",
+    "subTitle" : "Surveillance services to protect from robber's threat",
+    "categories" : "Computer Vision"
+    "img_src" : "img/portfolio/startup-framework.png"
 }
 ]
