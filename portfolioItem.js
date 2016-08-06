@@ -27,6 +27,7 @@ $(document).ready(function() {
 
         d.find(".img-responsive").attr('src',portfolio_item[i].img_src);
 
+
         // portfolio modal view
         var modal = $('#template_portfolioModal').clone(true);
         var modal_container = modal.find('.modal-body').empty();
@@ -51,6 +52,18 @@ $(document).ready(function() {
           html : 'You can download the PSD template in this portfolio sample item at <a href=\"http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/\">FreebiesXpress.com</a>.'
         }));
 
+        modal_container.append($('<div/>',{
+          id:'portfolio_pdf'
+        }));
+
+        modal_container.append($('<iframe/>',{
+          src:"https://www.irs.gov/pub/irs-pdf/f1040sa.pdf",
+          style:"width: 100%; height: 100%",
+          // frameborder="0",
+          // scrolling="no"
+        }));
+
+
         modal_container.append($('<button/>', {
           type : "button",
           class : "btn btn-primary",
@@ -58,6 +71,8 @@ $(document).ready(function() {
           html : '<i class="fa fa-times"></i> Close Project'
         }));
 
+        if(i%3 == 0)
+          $('#portfoilo_cells').append('  <div class="clearfix visible-md visible-lg"></div>');
 
         $('#portfoilo_cells').append(d.removeClass('template_cell').attr('id', 'portfolio-item'+i).show());
 
