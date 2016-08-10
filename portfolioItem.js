@@ -6,8 +6,7 @@ $(document).ready(function() {
 
   $.getJSON(url + 'data/portfolio_item.json', function(data){
     portfolio_item = data;
-    // console.log(data);
-
+    
     for(var  i = 0 ; i < portfolio_item.length; i ++){
 
         // portfolio cell
@@ -38,21 +37,32 @@ $(document).ready(function() {
           html : portfolio_item[i].subTitle
         }));
 
-        addImgToModal_Container(modal_container, "img/portfolio/dreams-preview.png");
-
-        modal_container.append($('<p/>', {
-          html : "Dreams is a free PSD web template built by <a href=\"https://www.behance.net/MathavanJaya\">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. Itâ€™s a beautiful template thatâ€™s designed with the Bootstrap framework in mind."
-        }));
-
-        modal_container.append($('<p/>', {
-          html : 'You can download the PSD template in this portfolio sample item at <a href=\"http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/\">FreebiesXpress.com</a>.'
-        }));
-
-        modal_container.append($('<div/>',{
-          id:'portfolio_pdf'
-        }));
+        $.getJSON(url + portfolio_item[i].modal_src, (function(container) {
+          return function(modal_data){
+            for (var num in modal_data.img_src) {
+              if (modal_data.img_src.hasOwnProperty(num)) {
+                // alert(img);
+                addImgToModal_Container(container, modal_data.img_src[num]);
+              }
+            }
+            addCloseBtnToModal_Container(container);
+          }
+        }(modal_container)));
 
 
+        // modal_container.append($('<p/>', {
+        //   html : "Dreams is a free PSD web template built by <a href=\"https://www.behance.net/MathavanJaya\">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. Itâ€™s a beautiful template thatâ€™s designed with the Bootstrap framework in mind."
+        // }));
+        //
+        // modal_container.append($('<p/>', {
+        //   html : 'You can download the PSD template in this portfolio sample item at <a href=\"http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/\">FreebiesXpress.com</a>.'
+        // }));
+        //
+        // modal_container.append($('<div/>',{
+        //   id:'portfolio_pdf'
+        // }));
+        //
+        //
 
 
 
@@ -75,6 +85,8 @@ $(document).ready(function() {
 
 
 });
+
+
 
 function addImgToModal_Container(modal_container, img_src){
   modal_container.append($('<img/>', {
