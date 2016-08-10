@@ -64,7 +64,7 @@
 },
 {
     "title" : "Speeach Master",
-    "subTitle" : "help practice App to speech, presentation and so on",
+    "subTitle" : "help practice App to speech, presentation",
     "categories" : "Windows App",
     "img_src" : "img/portfolio/Speech Master/speeach master-preview.png",
     "modal_src": "data/portfolio_modal/CloudBreadProject-Dev.json"
