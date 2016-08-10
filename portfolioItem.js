@@ -31,18 +31,14 @@ $(document).ready(function() {
         // portfolio modal view
         var modal = $('#template_portfolioModal').clone(true);
         var modal_container = modal.find('.modal-body').empty();
-        modal_container.append("<h2>" + portfolio_item[i].title+"</h4>");
+        modal_container.append("<h2>" + portfolio_item[i].title+"</h2>");
 
         modal_container.append($('<p/>', {
           class : "item-intro text-muted",
-          html : "Lorem ipsum dolor sit amet consectetur."
+          html : portfolio_item[i].subTitle
         }));
 
-        modal_container.append($('<img/>', {
-          class : "img-responsive img-centered",
-          src : "img/portfolio/dreams-preview.png",
-          alt : ""
-        }));
+        addImgToModal_Container(modal_container, "img/portfolio/dreams-preview.png");
 
         modal_container.append($('<p/>', {
           html : "Dreams is a free PSD web template built by <a href=\"https://www.behance.net/MathavanJaya\">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. Itâ€™s a beautiful template thatâ€™s designed with the Bootstrap framework in mind."
@@ -56,20 +52,9 @@ $(document).ready(function() {
           id:'portfolio_pdf'
         }));
 
-        modal_container.append($('<iframe/>',{
-          src:"https://www.irs.gov/pub/irs-pdf/f1040sa.pdf",
-          style:"width: 100%; height: 100%",
-          // frameborder="0",
-          // scrolling="no"
-        }));
 
 
-        modal_container.append($('<button/>', {
-          type : "button",
-          class : "btn btn-primary",
-          'data-dismiss' : "modal",
-          html : '<i class="fa fa-times"></i> Close Project'
-        }));
+
 
         if(i%3 == 0)
           $('#portfoilo_cells').append('  <div class="clearfix visible-md visible-lg"></div>');
@@ -80,7 +65,7 @@ $(document).ready(function() {
 
 
         d.find(".portfolio-link").click({modal : modal},function(event){
-          console.log(event.data.modal);
+
           event.data.modal.modal();
         });
 
@@ -90,3 +75,29 @@ $(document).ready(function() {
 
 
 });
+
+function addImgToModal_Container(modal_container, img_src){
+  modal_container.append($('<img/>', {
+    class : "img-responsive img-centered",
+    src : img_src,
+    alt : ""
+  }));
+}
+
+function addCloseBtnToModal_Container(modal_container){
+  modal_container.append($('<button/>', {
+    type : "button",
+    class : "btn btn-primary",
+    'data-dismiss' : "modal",
+    html : '<i class="fa fa-times"></i> Close Project'
+  }));
+}
+
+function addPDFToModal_Container(modal_container) {
+  modal_container.append($('<iframe/>',{
+    src:"https://www.irs.gov/pub/irs-pdf/f1040sa.pdf",
+    style:"width: 100%; height: 100%;",
+    // frameborder="0",
+    // scrolling="no"
+  }));
+}
