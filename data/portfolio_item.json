@@ -1,72 +1,62 @@
-[
-  {
-      "title" : "CloudBread Project devleop",
-      "subTitle" : "Open Source Game Server Engine",
-      "categories" : "Game Server Engine",
-      "img_src" : "img/portfolio/CloudBread/CloudBread Dev-preview.png",
+[{
 
-  },
-  {
-      "title" : "CloudBread Camp",
-      "subTitle" : "Open Source Game Server Engine",
-      "categories" : "Open Source Community Activities",
-      "img_src" : "img/portfolio/CloudBread/CloudBread Camp-preview.png",
-
-  },
-  {
-      "title" : "I am as I am (모든 것은 나다.)",
-      "subTitle" : "Drone & HMD Collaboration Art",
-      "categories" : "Interactive Meida Art",
-      "img_src" : "img/portfolio/I am as I am/I am as I am-preview.png",
-
-  },
-  {
-      "title" : "Malil - Pop up Restautant",
-      "subTitle" : "Space Share Platform for prep. chiefs",
-      "categories" : "UX design",
-      "img_src" : "img/portfolio/Malil/Malil-preview.png",
-
-  },
-  {
-      "title" : "Light of Sea",
-      "subTitle" : "Interactive Eduction, Light's properties",
-      "categories" : "Interactive Media Arts",
-      "img_src" : "img/portfolio/Light of Sea/Light of Sea-preview.png",
-
-  },
-  {
-      "title" : "Waterful",
-      "subTitle" : "Smart Water Reminder App",
-      "categories" : "Apple Watch App",
-      "img_src" : "img/portfolio/Waterful/waterful-preview.png",
-
-  },
-  {
-      "title" :"Around the Truck",
-      "subTitle" : "Android Mobile App",
-      "categories" : "Android Mobile App",
-      "img_src" : "img/portfolio/Around The Truck/Around The Truck-preview.png",
-
-  },
-  {
-      "title" : "Shall We Mate?",
-      "subTitle" : "Macthing Roommates Platform for Share House",
-      "categories" : "iOS Mobile App",
-      "img_src" : "img/portfolio/Shall We Mate/Shall We Mate-preview.png",
-
-  },
-  {
-      "title" : "감시소",
-      "subTitle" : "Surveillance services to protect from robber's threat",
-      "categories" : "Computer Vision",
-      "img_src" : "img/portfolio/startup-framework.png",
-
-  },
-  {
-      "title" : "Speeach Master",
-      "subTitle" : "help practice App to speech, presentation and so on",
-      "categories" : "Windows App",
-      "img_src" : "img/portfolio/Speech Master/speeach master-preview.png",
-
-  }
+    "title" : "CloudBread Project devleop",
+    "subTitle" : "Open Source Game Server Engine",
+    "categories" : "Game Server Engine",
+    "img_src" : "img/portfolio/CloudBread/CloudBread Dev-preview.png"
+},
+{
+    "title" : "CloudBread Camp",
+    "subTitle" : "Open Source Game Server Engine",
+    "categories" : "Open Source Community Activities",
+    "img_src" : "img/portfolio/CloudBread/CloudBread Camp-preview.png"
+},
+{
+    "title" : "I am as I am (모든 것은 나다.)",
+    "subTitle" : "Drone & HMD Collaboration Art",
+    "categories" : "Interactive Meida Art",
+    "img_src" : "img/portfolio/I am as I am/I am as I am-preview.png"
+},
+{
+    "title" : "Malil - Pop up Restautant",
+    "subTitle" : "Space Share Platform for prep. chiefs",
+    "categories" : "UX design",
+    "img_src" : "img/portfolio/Malil/Malil-preview.png"
+},
+{
+    "title" : "Light of Sea",
+    "subTitle" : "Interactive Eduction, Light's properties",
+    "categories" : "Interactive Media Arts",
+    "img_src" : "img/portfolio/Light of Sea/Light of Sea-preview.png"
+},
+{
+    "title" : "Waterful",
+    "subTitle" : "Smart Water Reminder App",
+    "categories" : "Apple Watch App",
+    "img_src" : "img/portfolio/Waterful/waterful-preview.png"
+},
+{
+    "title" :"Around the Truck",
+    "subTitle" : "Android Mobile App",
+    "categories" : "Android Mobile App",
+    "img_src" : "img/portfolio/Around The Truck/Around The Truck-preview.png"
+},
+{
+    "title" : "Shall We Mate?",
+    "subTitle" : "Macthing Roommates Platform for Share House",
+    "categories" : "iOS Mobile App",
+    "img_src" : "img/portfolio/Shall We Mate/Shall We Mate-preview.png"
+},
+{
+    "title" : "감시소",
+    "subTitle" : "Surveillance services to protect from robber's threat",
+    "categories" : "Computer Vision",
+    "img_src" : "img/portfolio/startup-framework.png"
+},
+{
+    "title" : "Speeach Master",
+    "subTitle" : "help practice App to speech, presentation and so on",
+    "categories" : "Windows App",
+    "img_src" : "img/portfolio/Speech Master/speeach master-preview.png"
+}
 ]
